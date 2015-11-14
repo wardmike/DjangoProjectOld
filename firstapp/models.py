@@ -11,7 +11,7 @@ class Translation(models.Model):
 	english_text = models.CharField(max_length=20)
 	spanish_text = models.CharField(max_length=20)
 	def __str__(self):
-		return self.english_text self.spanish_text
+		return self.english_text
 
 class Correct(models.Model):
 	user = models.ForeignKey(User)
